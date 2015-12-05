@@ -19,6 +19,7 @@ namespace SecretSantaSurvey.Api.Models
     {
         public int Id { get; set; }
         public string Text { get; set; }
+        public string Answers { get; set; }
         public Survey ParentSurvey { get; set; }
     }
 }
