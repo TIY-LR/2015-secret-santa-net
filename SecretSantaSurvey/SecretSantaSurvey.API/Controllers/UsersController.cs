@@ -91,15 +91,18 @@ namespace SecretSantaSurvey.API.Controllers
             }
 
             //TODO We have a user...add a survey, with the questions 
-             //(populated from the startingquestions above)
+            //(populated from the startingquestions above)
             //and then add that survey to the user.
-            //I.e. var s  = new Survey()....
-            //foreach(var str in StartingQuestions)
-            //    var q = new Question() { Survey = s, Text = str }
-            //    s.Questions.Add(q);
+            //I.e. 
+            var s = new Survey();
+            foreach (var str in StartingQuestions)
+            {
+                var q = new Question() { ParentSurvey = s, Text = str};
 
-            //user.Surevys.Add(s);
+                s.Questions.Add(q);
 
+                user.Survey.Add(s);
+            }
             db.Users.Add(user);
             db.SaveChanges();
 
