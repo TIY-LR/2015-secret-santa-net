@@ -15,6 +15,16 @@ namespace SecretSantaSurvey.API.Controllers
 {
     public class UsersController : ApiController
     {
+
+        private List<string> StartingQuestions = new List<string>()
+        {
+            "Do you identify as a boy or a girl?",
+            "Do you like gifts?",
+            "Do you prefer to call it Christmas or X-mas?",
+            "Do you think that christmas is just a holiday started by the Illumniti?"
+
+        };
+
         private SecretSantaDB db = new SecretSantaDB();
 
         // GET: api/Users
@@ -79,6 +89,16 @@ namespace SecretSantaSurvey.API.Controllers
             {
                 return BadRequest(ModelState);
             }
+
+            //TODO We have a user...add a survey, with the questions 
+             //(populated from the startingquestions above)
+            //and then add that survey to the user.
+            //I.e. var s  = new Survey()....
+            //foreach(var str in StartingQuestions)
+            //    var q = new Question() { Survey = s, Text = str }
+            //    s.Questions.Add(q);
+
+            //user.Surevys.Add(s);
 
             db.Users.Add(user);
             db.SaveChanges();
