@@ -1,4 +1,4 @@
-namespace SecretSantaSurvey.Api.Areas.HelpPage
+namespace SecretSantaSurvey.API.Areas.HelpPage
 {
     /// <summary>
     /// Indicates whether the sample is used for request or response

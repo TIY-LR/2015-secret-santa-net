@@ -1,6 +1,6 @@
 using System;
 
-namespace SecretSantaSurvey.Api.Areas.HelpPage.ModelDescriptions
+namespace SecretSantaSurvey.API.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Use this attribute to change the name of the <see cref="ModelDescription"/> generated for a type.

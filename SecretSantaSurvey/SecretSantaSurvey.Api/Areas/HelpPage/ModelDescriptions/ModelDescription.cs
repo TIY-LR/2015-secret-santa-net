@@ -1,6 +1,6 @@
 using System;
 
-namespace SecretSantaSurvey.Api.Areas.HelpPage.ModelDescriptions
+namespace SecretSantaSurvey.API.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Describes a type model.

@@ -1,7 +1,7 @@
 using System.Web.Http;
 using System.Web.Mvc;
 
-namespace SecretSantaSurvey.Api.Areas.HelpPage
+namespace SecretSantaSurvey.API.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {

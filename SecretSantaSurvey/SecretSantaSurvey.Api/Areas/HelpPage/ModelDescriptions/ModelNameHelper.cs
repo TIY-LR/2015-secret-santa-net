@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace SecretSantaSurvey.Api.Areas.HelpPage.ModelDescriptions
+namespace SecretSantaSurvey.API.Areas.HelpPage.ModelDescriptions
 {
     internal static class ModelNameHelper
     {

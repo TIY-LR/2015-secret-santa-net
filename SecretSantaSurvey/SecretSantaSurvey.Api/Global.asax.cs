@@ -7,7 +7,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace SecretSantaSurvey.Api
+namespace SecretSantaSurvey.API
 {
     public class WebApiApplication : System.Web.HttpApplication
     {

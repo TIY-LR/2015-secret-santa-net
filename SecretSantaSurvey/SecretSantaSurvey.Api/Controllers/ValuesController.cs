@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace SecretSantaSurvey.Api.Controllers
+namespace SecretSantaSurvey.API.Controllers
 {
     public class ValuesController : ApiController
     {

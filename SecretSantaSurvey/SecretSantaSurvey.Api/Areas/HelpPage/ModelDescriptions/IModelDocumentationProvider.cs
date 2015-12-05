@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 
-namespace SecretSantaSurvey.Api.Areas.HelpPage.ModelDescriptions
+namespace SecretSantaSurvey.API.Areas.HelpPage.ModelDescriptions
 {
     public interface IModelDocumentationProvider
     {

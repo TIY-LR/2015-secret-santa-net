@@ -11,10 +11,10 @@ using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
-using SecretSantaSurvey.Api.Areas.HelpPage.ModelDescriptions;
-using SecretSantaSurvey.Api.Areas.HelpPage.Models;
+using SecretSantaSurvey.API.Areas.HelpPage.ModelDescriptions;
+using SecretSantaSurvey.API.Areas.HelpPage.Models;
 
-namespace SecretSantaSurvey.Api.Areas.HelpPage
+namespace SecretSantaSurvey.API.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {

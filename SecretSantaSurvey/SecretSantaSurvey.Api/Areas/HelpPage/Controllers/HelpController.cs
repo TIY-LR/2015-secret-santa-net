@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using SecretSantaSurvey.Api.Areas.HelpPage.ModelDescriptions;
-using SecretSantaSurvey.Api.Areas.HelpPage.Models;
+using SecretSantaSurvey.API.Areas.HelpPage.ModelDescriptions;
+using SecretSantaSurvey.API.Areas.HelpPage.Models;
 
-namespace SecretSantaSurvey.Api.Areas.HelpPage.Controllers
+namespace SecretSantaSurvey.API.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.
