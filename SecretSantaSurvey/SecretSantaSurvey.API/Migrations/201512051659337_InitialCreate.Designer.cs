@@ -13,7 +13,7 @@ namespace SecretSantaSurvey.API.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201512050454549_InitialCreate"; }
+            get { return "201512051659337_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source
