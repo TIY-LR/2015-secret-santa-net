@@ -9,7 +9,6 @@ namespace SecretSantaSurvey.Api.Models
     {
         public int Id { get; set; }
         public User User { get; set; }
-        public int Relationship { get; set; }
         public string Name { get; set; }
 
         public ICollection<Question> Questions { get; set; }
