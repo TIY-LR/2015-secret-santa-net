@@ -11,7 +11,7 @@ namespace SecretSantaSurvey.Api.Models
         
 
         public int Id { get; set; }
-        public User UserID { get; set; }
+        public virtual User UserID { get; set; }
 
         public virtual ICollection<Question> Questions { get; set; }
 
@@ -25,6 +25,6 @@ namespace SecretSantaSurvey.Api.Models
     {
         public int Id { get; set; }
         public string Text { get; set; }
-        public Survey ParentSurvey { get; set; }
+        public virtual Survey ParentSurvey { get; set; }
     }
 }
