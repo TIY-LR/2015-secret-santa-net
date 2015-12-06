@@ -71,32 +71,33 @@ namespace SecretSantaSurvey.API.Controllers
         }
 
         // POST: api/Questions
-        [ResponseType(typeof(Question))]
-        public IHttpActionResult PostQuestion(CreateQuestionVM model)
+       // [ResponseType(typeof(Question))]
+        public IHttpActionResult PostQuestion(CreateQuestionVM question)
         {
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
             //look up the survey based on the id that David passed to you.
-            var survey = db.Surveys.Find(model.Survey);
+            var survey = db.Surveys.Find(question.Survey);
             if (survey == null)
             {
-                return BadRequest($"Couldn't find survey with id {model.Survey}");
+                return BadRequest($"Couldn't find survey with id {question.Survey}");
             }
 
-            var question = new Question()
+            var newquestion = new Question()
             {
-                Answer = model.Answer,
-                Text = model.Text,
+                Answer = question.Answer,
+                Text = question.Text,
                 ParentSurvey = survey
             };
 
-            db.Questions.Add(question);
+            db.Questions.Add(newquestion);
             db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = question.Id }, question);
+            return CreatedAtRoute("DefaultApi", new { id = newquestion.Id }, question);
         }
 
         // DELETE: api/Questions/5
