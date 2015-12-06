@@ -18,10 +18,16 @@ namespace SecretSantaSurvey.API.Controllers
 
         private List<string> StartingQuestions = new List<string>()
         {
-            "Do you identify as a boy or a girl?",
-            "Do you like gifts?",
-            "Do you prefer to call it Christmas or X-mas?",
-            "Do you think that christmas is just a holiday started by the Illumniti?"
+            "1. Are you a Boy/Girl/Undecided?",
+            "2. Where's your favorite place / brand to buy clothes?",
+            "3.Do you collect anything? If so, what is it?",
+            "4. Do you have any food allergies? If so, what are they?",
+            "5. What is something you can't live without?",
+            "6. What's one thing you always seem to be running out of?",
+            "7. You love the smell of _____ ?",
+            "8. Do you have a favorite hobby? What is it?",
+            "9. If you have a favorite sports team, who are they?",
+            "10. Bonus: What was the worst Christmas gift you can think of?"
 
         };
 
@@ -101,8 +107,8 @@ namespace SecretSantaSurvey.API.Controllers
 
                 s.Questions.Add(q);
             }
-                user.Survey.Add(s);
-            
+            user.Survey.Add(s);
+
             db.Users.Add(user);
             db.SaveChanges();
 
