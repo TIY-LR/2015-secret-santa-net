@@ -34,9 +34,9 @@ namespace SecretSantaSurvey.API.Controllers
         private SecretSantaDB db = new SecretSantaDB();
 
         // GET: api/Users
-        public IQueryable<User> GetUsers()
+        public IHttpActionResult GetUsers()
         {
-            return db.Users;
+            return Ok(db.Users.ToList());
         }
 
         // GET: api/Users/5
