@@ -37,19 +37,18 @@ namespace SecretSantaSurvey.API.Controllers
 
         // PUT: api/Questions/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutQuestion(int id, Question question)
+        public IHttpActionResult PutQuestion(int id, CreateQuestionVM question)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != question.Id)
-            {
-                return BadRequest();
-            }
 
-            db.Entry(question).State = EntityState.Modified;
+            var existingQuestionFromDB = db.Questions.Find(id);
+            existingQuestionFromDB.Answer = question.Answer;
+            existingQuestionFromDB.Text = question.Text;
+
 
             try
             {
@@ -71,7 +70,7 @@ namespace SecretSantaSurvey.API.Controllers
         }
 
         // POST: api/Questions
-       // [ResponseType(typeof(Question))]
+        // [ResponseType(typeof(Question))]
         public IHttpActionResult PostQuestion(CreateQuestionVM question)
         {
 
