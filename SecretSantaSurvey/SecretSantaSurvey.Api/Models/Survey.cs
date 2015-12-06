@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SecretSantaSurvey.API.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -24,13 +25,5 @@ namespace SecretSantaSurvey.Api.Models
         {
             Questions = new List<Question>();
         }
-    }
-
-    public class Question
-    {
-        public int Id { get; set; }
-        public string Text { get; set; }
-        public string Answer { get; set; }
-        public virtual Survey ParentSurvey { get; set; }
     }
 }

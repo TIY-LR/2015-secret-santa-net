@@ -27,6 +27,7 @@ namespace SecretSantaSurvey.API.Models
 
         public virtual DbSet<Survey> Surveys { get; set; }
 
+        public System.Data.Entity.DbSet<SecretSantaSurvey.API.Models.Question> Questions { get; set; }
     }
 
     //public class MyEntity
