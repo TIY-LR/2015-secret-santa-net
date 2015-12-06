@@ -11,5 +11,10 @@ namespace SecretSantaSurvey.Api.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public ICollection<Survey> Survey { get; set;}
+
+        public User()
+        {
+            Survey = new List<Survey>();
+        }
     }
 }

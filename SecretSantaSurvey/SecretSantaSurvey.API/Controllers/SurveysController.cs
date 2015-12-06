@@ -16,32 +16,23 @@ namespace SecretSantaSurvey.API.Controllers
     public class SurveysController : ApiController
     {
         private SecretSantaDB db = new SecretSantaDB();
-/*
         // GET: api/Surveys
         public IQueryable<Survey> GetSurveys()
         {
-            Survey survey = db.Surveys;
-            return db.Surveys.;
+            return db.Surveys;
         }
 
         // GET: api/Surveys/5
         [ResponseType(typeof(Survey))]
         public IHttpActionResult GetSurvey(int id)
         {
-            
-            Survey survey = db.Surveys
-            
-                if (survey == null)
+            Survey survey = db.Surveys.Find(id);
+            if (survey == null)
             {
                 return NotFound();
             }
-
-            return Ok(survey.Questions);
-                    
-            
+            return Ok(survey);
         }
-
-    */
 
         // PUT: api/Surveys/5
         [ResponseType(typeof(void))]

@@ -97,12 +97,12 @@ namespace SecretSantaSurvey.API.Controllers
             var s = new Survey();
             foreach (var str in StartingQuestions)
             {
-                var q = new Question() { ParentSurvey = s, Text = str};
+                var q = new Question() { ParentSurvey = s, Text = str };
 
                 s.Questions.Add(q);
-
-                user.Survey.Add(s);
             }
+                user.Survey.Add(s);
+            
             db.Users.Add(user);
             db.SaveChanges();
 

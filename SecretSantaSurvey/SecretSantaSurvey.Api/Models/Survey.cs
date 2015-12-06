@@ -7,11 +7,18 @@ namespace SecretSantaSurvey.Api.Models
 {
     public class Survey
     {
+        //initialize to an empty list
+        
+
         public int Id { get; set; }
         public User UserID { get; set; }
 
-        public ICollection<Question> Questions { get; set; }
+        public virtual ICollection<Question> Questions { get; set; }
 
+        public Survey()
+        {
+            Questions = new List<Question>();
+        }
     }
 
     public class Question
