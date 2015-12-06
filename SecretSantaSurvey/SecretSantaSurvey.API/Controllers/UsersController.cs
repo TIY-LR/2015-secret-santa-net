@@ -18,16 +18,16 @@ namespace SecretSantaSurvey.API.Controllers
 
         private List<string> StartingQuestions = new List<string>()
         {
-            "1. Are you a Boy/Girl/Undecided?",
-            "2. Where's your favorite place / brand to buy clothes?",
-            "3.Do you collect anything? If so, what is it?",
-            "4. Do you have any food allergies? If so, what are they?",
-            "5. What is something you can't live without?",
-            "6. What's one thing you always seem to be running out of?",
-            "7. You love the smell of _____ ?",
-            "8. Do you have a favorite hobby? What is it?",
-            "9. If you have a favorite sports team, who are they?",
-            "10. Bonus: What was the worst Christmas gift you can think of?"
+            "Are you a Boy/Girl/Undecided?",
+            "Where's your favorite place / brand to buy clothes?",
+            "Do you collect anything? If so, what is it?",
+            "Do you have any food allergies? If so, what are they?",
+            "What is something you can't live without?",
+            "What's one thing you always seem to be running out of?",
+            "You love the smell of _____ ?",
+            "Do you have a favorite hobby? What is it?",
+            "If you have a favorite sports team, who are they?",
+            "Bonus: What was the worst Christmas gift you can think of?"
 
         };
 
