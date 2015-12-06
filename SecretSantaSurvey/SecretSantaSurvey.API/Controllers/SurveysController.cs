@@ -17,9 +17,9 @@ namespace SecretSantaSurvey.API.Controllers
     {
         private SecretSantaDB db = new SecretSantaDB();
         // GET: api/Surveys
-        public IQueryable<Survey> GetSurveys()
+        public IHttpActionResult GetSurveys()
         {
-            return db.Surveys;
+            return Ok(db.Surveys.ToList());
         }
 
         // GET: api/Surveys/5
