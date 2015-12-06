@@ -10,11 +10,11 @@ namespace SecretSantaSurvey.Api.Models
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public virtual ICollection<Survey> Survey { get; set;}
+        public virtual Survey Survey { get; set;}
 
         public User()
         {
-            Survey = new List<Survey>();
+            Survey = new Survey();
         }
     }
 }

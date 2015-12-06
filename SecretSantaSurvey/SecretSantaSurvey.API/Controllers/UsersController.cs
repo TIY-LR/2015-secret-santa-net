@@ -107,7 +107,7 @@ namespace SecretSantaSurvey.API.Controllers
 
                 s.Questions.Add(q);
             }
-            user.Survey.Add(s);
+            user.Survey = s;
 
             db.Users.Add(user);
             db.SaveChanges();
